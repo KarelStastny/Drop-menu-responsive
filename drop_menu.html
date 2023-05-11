@@ -10,53 +10,69 @@
 <body>
 
 <header>
-    <div class="container">
-        <a href="#" id="logo">Assassin's Creed Odyssey</a>
-        <nav class="navbar">
-            <ul class="ul-first">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Story +</a>
-                    <ul class="ul-second">
-                        <li><a href="#">The main story +</a>
-                            <ul class="ul-third">
-                                <li><a href="#">Family story</a></li>
-                                <li><a href="#">Cult of Kosmos</a></li>
-                                <li><a href="#">War story</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">A side story</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Gallery +</a>
-                    <ul class="ul-second">
-                        <li><a href="#">Wallpapers</a></li>
-                        <li><a href="#">Character</a></li>
-                        <li><a href="#">Armory</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Character +</a>
-                    <ul class="ul-second">
-                        <li><a href="">Alexios</a></li>
-                        <li><a href="">Kassandra</a></li>
-                        <li><a href="">Elpidios</a></li>
-                        <li><a href="">Aspasia</a></li>
-                        <li><a href="">Alkibiades</a></li>
-                        <li><a href="">Phoibe</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Alexios</a></li>
-                <li><a href="#">Kassandra</a></li>
-                <li><a href="#">Myrrine</a></li>
-            </ul>
-        </nav>
-    </div>
 
+    <!-- Logo  -->
+    <a class="logo" href="#">Logo</a>
 
+    <!-- Hambuerger menu -->
+    <input type="checkbox" id="menu-bar">    
+    <label for="menu-bar">Menu</label>
 
+    <!-- Celá navigace  -->
+    <nav class="navbar">
+        <ul>
 
+            <!-- Hlavní navigace -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Story +</a>
+                <!-- Rozbalovací navigace 1 -->
+                <ul>
+                    <li><a href="#">Main story +</a>
+                        <!-- Rozbalovací navigace 2 -->
+                        <ul>
+                            <li><a href="#">Family story</a></li>
+                            <li><a href="#">Cult of Kosmos</a></li>
+                            <li><a href="#">War story</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Side story</a></li>
+                </ul>
+            </li>
+
+            <!-- Hlavní navigace -->
+            <li><a href="#">Gallery +</a>
+                <!-- Rozbalovací navigace 1 -->
+                <ul>
+                    <li><a href="#">Wallpapers</a></li>
+                    <li><a href="#">Character +</a>
+                        <!-- Rozbalovací navigace 2 -->
+                        <ul>
+                            <li><a href="">Alexios</a></li>
+                            <li><a href="">Kassandra</a></li>
+                            <li><a href="">Elpidios</a></li>
+                            <li><a href="">Aspasia</a></li>
+                            <li><a href="">Alkibiades</a></li>
+                            <li><a href="">Phoibe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Armory</a></li>
+                </ul>
+            </li>
+
+            <!-- Hlavní navigace -->
+            <li><a href="#">About game</a></li>
+            <li><a href="#">About players</a></li>
+            <li><a href="#">About studio</a></li>
+
+                
+             
+        </ul>
+
+    </nav>
 
 </header>
     <!-- Script -->
     <script src="drop_menu.js"></script>
 </body>
 </html>
+

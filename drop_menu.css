@@ -1,68 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
-:root{
-    --color-white: #fff;
-    --color-primal: #283326;
-    --color-second: #eee;
-    --color-third: rgba(0,0,0,0.1)
+body {
+  min-height: 100vh;
+  background-image: url(image/background.jpg);
 }
 
-body{
-    
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-header{
-    height: 100vh;
-    background: url(image/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+header .log {
+  font-weight: bolder;
+  font-size: 25px;
 }
 
-.container{
-    position: fixed;
-    top: 0;
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+.navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+}
+.navbar ul li a:hover {
+  background-color: green;
+  color: black;
+}
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  display: none;
+}
+.navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid black;
+}
+.navbar ul li ul li ul {
+  left: 150px;
+  top: 0;
+}
+.navbar ul li:focus-within > ul, .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--color-third);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3rem;
-    z-index: 100;
-  
-    padding: 0 2%;
-
-}
-
-#logo{
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--color-primal);
-}
-
-.ul-first{
-    display: flex;
-    list-style: none;
-    
-    
-}
-
-.ul-first li a{
-    padding: 0.8rem;
-    color:var(--color-primal);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.ul-first li a:hover{
-    background: var(--color-primal);
-    color: var(--color-second);
-    border-radius: 10px;
-}
+    background-color: orange;
+    border-top: 1px solid black;
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background-color: red;
+    padding-left: 30px;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+  header .navbar ul li ul li ul li {
+    padding-left: 30px;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}/*# sourceMappingURL=drop_menu.css.map */
