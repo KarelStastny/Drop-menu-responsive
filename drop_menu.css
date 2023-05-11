@@ -16,15 +16,14 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: red;
-  padding: 20px 7%;
+  padding: 0px 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
-header .log {
+header .logo {
   font-weight: bolder;
   font-size: 25px;
 }
@@ -42,7 +41,6 @@ header .log {
   display: block;
 }
 .navbar ul li a:hover {
-  background-color: green;
   color: black;
 }
 .navbar ul li ul {
@@ -73,7 +71,7 @@ header label {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   header {
     padding: 20px;
   }
@@ -85,7 +83,6 @@ header label {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: orange;
     border-top: 1px solid black;
     display: none;
   }
@@ -97,7 +94,6 @@ header label {
     width: 100%;
   }
   header .navbar ul li ul li {
-    background-color: red;
     padding-left: 30px;
   }
   header .navbar ul li ul li ul {

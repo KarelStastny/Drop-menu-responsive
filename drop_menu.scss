@@ -16,15 +16,14 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: red;
-    padding: 20px 7%;
+    padding: 0px 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
 }
 
-header .log{
+header .logo{
     font-weight: bolder;
     font-size: 25px;
 
@@ -33,21 +32,17 @@ header .log{
 
 .navbar ul{
 list-style: none;
-// display: flex;
-// flex-direction: row;
 
     li{
         position: relative;
         float: left;
         
-
         a{
             font-size: 20px;
             padding: 20px;
             display: block;
 
             &:hover{
-                background-color: green;
                 color: black;
             }
         }
@@ -90,7 +85,7 @@ header label{
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
 
     header{
         padding: 20px;
@@ -104,7 +99,6 @@ header label{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: orange;
         border-top: 1px solid black;
         // Vše zakryje bez přepínače
         display: none;
@@ -120,7 +114,6 @@ header label{
                     width: 100%;
                 
                     li{
-                        background-color: red;
                         padding-left: 30px;
             
                         ul{
