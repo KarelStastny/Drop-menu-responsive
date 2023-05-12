@@ -26,53 +26,7 @@ home.addEventListener("click", function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-odkazStudio.addEventListener("click", function(){
-    window.scrollTo({
-        top: scrollStudio -70,
-        behavior: "smooth"
-    })
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//first scroll to game
+//first scroll to Game
 odkazGame.addEventListener("click", function(){
     window.scrollTo({
         top: scrollGame -70,
@@ -90,6 +44,13 @@ odkazPlayers.addEventListener("click", function(){
 
 })
 
+//third scroll to Studio
+odkazStudio.addEventListener("click", function(){
+    window.scrollTo({
+        top: scrollStudio -70,
+        behavior: "smooth"
+    })
+})
 
 
 
