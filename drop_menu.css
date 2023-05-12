@@ -16,8 +16,14 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.row {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .section1 {
-  min-height: 90vh;
+  min-height: 92vh;
   background-image: url(image/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +65,6 @@ header .logo {
   color: var(--color-text);
 }
 .navbar ul li a:hover {
-  background-color: var(--color-hover);
   color: var(--color-white);
   border-radius: var(--radius-nav);
 }
@@ -95,6 +100,78 @@ header label img {
   width: 30px;
 }
 
+main h2 {
+  color: var(--color-text);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+  background-color: var(--color-transparent);
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+          clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.img-container img {
+  width: 400px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  padding: 3%;
+  transition: all 0.3s;
+}
+.img-container img:hover {
+  transform: scale(1.1);
+}
+
+.players-container {
+  display: flex;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+.players-container p {
+  max-width: 330px;
+  border: 1px solid var(--color-hover);
+  padding: 1rem;
+  text-align: justify;
+  border-radius: 20px;
+  margin: 1%;
+  margin: 0 auto;
+}
+
+.studio-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.studio-container .one-odstavec {
+  max-width: 800px;
+  margin: 2% auto;
+  background-color: var(--color-transparent);
+  color: white;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  background-color: var(--color-transparent);
+  line-height: 40px;
+  color: white;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 20px;
@@ -121,11 +198,25 @@ header label img {
     position: relative;
     width: 100%;
   }
+  header .navbar ul li ul li {
+    padding-left: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
   header .navbar ul li ul li ul {
     width: 100%;
     left: 0;
   }
+  header .navbar ul li ul li ul li {
+    padding-left: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
   #menu-bar:checked ~ .navbar {
     display: initial;
+  }
+}
+@media (max-width: 500px) {
+  .img-container img {
+    width: 300px;
+    height: 250px;
   }
 }/*# sourceMappingURL=drop_menu.css.map */
